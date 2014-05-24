@@ -7,6 +7,7 @@
 //
 
 #import "Bootstrap.h"
+#import "Strings.h"
 
 @implementation Bootstrap
 
@@ -14,12 +15,15 @@
 
 #pragma methods
 
--(void) initStringsNumbers {
-    NSLog(@"StringNumbers called...");
+-(void) initStrings {
+    Strings * stringInstance = [[Strings alloc] init];
+    [stringInstance checkCalled];
 }
 
 -(void) startApp {
     NSLog(@"Bootstrap Init called....");
+    //Starting Strings
+    [self initStrings];
 }
 
 @end

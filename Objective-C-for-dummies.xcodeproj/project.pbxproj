@@ -11,6 +11,7 @@
 		4F93B8321931109F00C79636 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93B8311931109F00C79636 /* main.m */; };
 		4F93B8361931109F00C79636 /* Objective_C_for_dummies.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4F93B8351931109F00C79636 /* Objective_C_for_dummies.1 */; };
 		4F93B8451931121400C79636 /* Bootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93B8441931121400C79636 /* Bootstrap.m */; };
+		4F93B8481931139900C79636 /* Strings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93B8471931139900C79636 /* Strings.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		4F93B8351931109F00C79636 /* Objective_C_for_dummies.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Objective_C_for_dummies.1; sourceTree = "<group>"; };
 		4F93B8431931121400C79636 /* Bootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bootstrap.h; sourceTree = "<group>"; };
 		4F93B8441931121400C79636 /* Bootstrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bootstrap.m; sourceTree = "<group>"; };
+		4F93B8461931139900C79636 /* Strings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Strings.h; sourceTree = "<group>"; };
+		4F93B8471931139900C79636 /* Strings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Strings.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 			children = (
 				4F93B8431931121400C79636 /* Bootstrap.h */,
 				4F93B8441931121400C79636 /* Bootstrap.m */,
+				4F93B8461931139900C79636 /* Strings.h */,
+				4F93B8471931139900C79636 /* Strings.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 			files = (
 				4F93B8451931121400C79636 /* Bootstrap.m in Sources */,
 				4F93B8321931109F00C79636 /* main.m in Sources */,
+				4F93B8481931139900C79636 /* Strings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

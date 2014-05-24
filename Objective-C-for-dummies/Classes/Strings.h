@@ -1,5 +1,5 @@
 //
-//  Bootstrap.h
+//  Strings.h
 //  Objective-C-for-dummies
 //
 //  Created by Cyberhulk on 5/24/14.
@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Bootstrap : NSObject
+@interface Strings : NSObject
 
 #pragma properties
 
+@property (strong, nonatomic) NSString * logMessage;
+
 #pragma methods
 
--(void) initStrings;
-
--(void) startApp;
+-(void) checkCalled;
 
 @end
