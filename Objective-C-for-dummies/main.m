@@ -12,9 +12,8 @@ int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
-        
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSLog(@"Main called...");
+        // Initializing the App Bootstrap...
         
     }
     return 0;
