@@ -13,8 +13,11 @@
 #pragma properties
 
 @property (strong, nonatomic) NSString * logMessage;
+@property (strong, nonatomic) NSString * stringToReturn;
 
 #pragma methods
+
+-(NSString *) returnFormatedString;
 
 -(void) checkCalled;
 
