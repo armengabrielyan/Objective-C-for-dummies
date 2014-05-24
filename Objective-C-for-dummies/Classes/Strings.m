@@ -14,8 +14,17 @@
 
 @synthesize logMessage = _logMessage;
 @synthesize stringToReturn = _stringToReturn;
+@synthesize contentsOfFile = _contentsOfFile;
 
 #pragma methods
+
+-(NSString *) returnContentsOfFile {
+    NSString *fileName = @"/Users/cyberhulk/Dev/Objective-C-for-dummies/Objective-C-for-dummies/Data/Files/sample.txt";
+    self.contentsOfFile = [NSString
+                           stringWithContentsOfFile:fileName
+                           encoding:NSStringEncodingConversionAllowLossy error:nil];
+    return self.contentsOfFile;
+}
 
 -(NSString *) returnFormatedString {
     self.stringToReturn = [NSString stringWithFormat:@"My custom formatted string is: %@", self.logMessage];
@@ -27,6 +36,8 @@
     NSLog(@"%@", self.logMessage);
     //Function that returns formatted string
     NSLog(@"%@",[self returnFormatedString]);
+    //Function that return contents of file
+    NSLog(@"%@", [self returnContentsOfFile]);
 }
 
 @end

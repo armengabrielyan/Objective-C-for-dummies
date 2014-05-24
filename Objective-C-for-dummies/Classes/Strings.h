@@ -14,8 +14,11 @@
 
 @property (strong, nonatomic) NSString * logMessage;
 @property (strong, nonatomic) NSString * stringToReturn;
+@property (weak, nonatomic) NSString * contentsOfFile;
 
 #pragma methods
+
+-(NSString *) returnContentsOfFile;
 
 -(NSString *) returnFormatedString;
 
