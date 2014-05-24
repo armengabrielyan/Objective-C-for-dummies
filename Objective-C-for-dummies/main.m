@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Classes/Bootstrap.h"
 
 int main(int argc, const char * argv[])
 {
@@ -14,7 +15,8 @@ int main(int argc, const char * argv[])
     @autoreleasepool {
         NSLog(@"Main called...");
         // Initializing the App Bootstrap...
-        
+        Bootstrap * boostrapInit = [[Bootstrap alloc] init];
+        [boostrapInit startApp];
     }
     return 0;
 }

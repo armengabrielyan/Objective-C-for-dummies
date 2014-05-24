@@ -10,6 +10,7 @@
 		4F93B82F1931109F00C79636 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F93B82E1931109F00C79636 /* Foundation.framework */; };
 		4F93B8321931109F00C79636 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93B8311931109F00C79636 /* main.m */; };
 		4F93B8361931109F00C79636 /* Objective_C_for_dummies.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4F93B8351931109F00C79636 /* Objective_C_for_dummies.1 */; };
+		4F93B8451931121400C79636 /* Bootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93B8441931121400C79636 /* Bootstrap.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		4F93B8311931109F00C79636 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4F93B8341931109F00C79636 /* Objective-C-for-dummies-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-C-for-dummies-Prefix.pch"; sourceTree = "<group>"; };
 		4F93B8351931109F00C79636 /* Objective_C_for_dummies.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Objective_C_for_dummies.1; sourceTree = "<group>"; };
+		4F93B8431931121400C79636 /* Bootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bootstrap.h; sourceTree = "<group>"; };
+		4F93B8441931121400C79636 /* Bootstrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bootstrap.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,7 @@
 		4F93B8301931109F00C79636 /* Objective-C-for-dummies */ = {
 			isa = PBXGroup;
 			children = (
+				4F93B83F193111C300C79636 /* Classes */,
 				4F93B8311931109F00C79636 /* main.m */,
 				4F93B8351931109F00C79636 /* Objective_C_for_dummies.1 */,
 				4F93B8331931109F00C79636 /* Supporting Files */,
@@ -86,6 +90,15 @@
 				4F93B8341931109F00C79636 /* Objective-C-for-dummies-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F93B83F193111C300C79636 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4F93B8431931121400C79636 /* Bootstrap.h */,
+				4F93B8441931121400C79636 /* Bootstrap.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F93B8451931121400C79636 /* Bootstrap.m in Sources */,
 				4F93B8321931109F00C79636 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
