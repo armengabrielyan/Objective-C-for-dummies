@@ -14,6 +14,8 @@
 
 #pragma methods
 
+-(void) initNumbers;
+
 -(void) initStrings;
 
 -(void) startApp;

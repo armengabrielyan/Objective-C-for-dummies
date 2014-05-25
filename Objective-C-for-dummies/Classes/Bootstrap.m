@@ -8,12 +8,18 @@
 
 #import "Bootstrap.h"
 #import "Strings.h"
+#import "Numbers.h"
 
 @implementation Bootstrap
 
 #pragma properties
 
 #pragma methods
+
+-(void) initNumbers {
+    Numbers * numbersInstance = [[Numbers alloc] init];
+    [numbersInstance checkCalled];
+}
 
 -(void) initStrings {
     Strings * stringInstance = [[Strings alloc] init];
@@ -24,6 +30,8 @@
     NSLog(@"Bootstrap Init called....");
     //Starting Strings
     [self initStrings];
+    //Statring Numbers
+    [self initNumbers];
 }
 
 @end
