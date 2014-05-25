@@ -16,6 +16,20 @@
 
 #pragma methods
 
+-(NSNumber *) returnNumbersFromStrings {
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    formatter.numberStyle = NSNumberFormatterSpellOutStyle;
+    NSNumber * num5 = [formatter numberFromString:@"two point two five"];
+    return num5;
+}
+
+-(void) showNSNumberFormatter {
+    NSNumber *num2 = @2.25;
+    NSNumberFormatter * formatter = [[NSNumberFormatter alloc] init];
+    formatter.numberStyle = NSNumberFormatterCurrencyStyle;
+    NSLog(@"Formatted num2 = %@", [formatter stringFromNumber:num2]);
+}
+
 -(CGFloat) convertToPrimitiveDataType {
     NSNumber *num1 = @1;
     NSNumber *num2 = @2.25;
@@ -36,6 +50,10 @@
     NSLog(@"Returning Number object: %@",[self returnNumberWithInteger]);
     //Calling convertToPrimitiveDataType
     NSLog(@"This will return primitive %f", [self convertToPrimitiveDataType]);
+    //Calling showNSNumberFormatter
+    [self showNSNumberFormatter];
+    //Calling returnStringsFromNumbers
+    NSLog(@"Number from String %@", [self returnNumbersFromStrings]);
 }
 
 @end

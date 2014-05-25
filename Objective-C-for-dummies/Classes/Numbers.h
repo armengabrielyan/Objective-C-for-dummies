@@ -16,6 +16,10 @@
 
 #pragma methods
 
+-(NSNumber *) returnNumbersFromStrings;
+
+-(void) showNSNumberFormatter;
+
 -(CGFloat) convertToPrimitiveDataType;
 
 -(NSNumber *) returnNumberWithInteger;
