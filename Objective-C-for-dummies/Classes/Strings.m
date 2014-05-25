@@ -15,8 +15,14 @@
 @synthesize logMessage = _logMessage;
 @synthesize stringToReturn = _stringToReturn;
 @synthesize contentsOfFile = _contentsOfFile;
+@synthesize myMuteStr = _myMuteStr;
 
 #pragma methods
+
+-(NSMutableString *) returnNsmutableString {
+    self.myMuteStr = [NSMutableString stringWithString:@"A"];
+    return self.myMuteStr;
+}
 
 -(NSString *) returnContentsOfFile {
     NSString *fileName = @"/Users/cyberhulk/Dev/Objective-C-for-dummies/Objective-C-for-dummies/Data/Files/sample.txt";
@@ -38,6 +44,8 @@
     NSLog(@"%@",[self returnFormatedString]);
     //Function that return contents of file
     NSLog(@"%@", [self returnContentsOfFile]);
+    //Checks for NSMutableStrings
+    NSLog(@"Mutable String is : %@", [self returnNsmutableString]);
 }
 
 @end

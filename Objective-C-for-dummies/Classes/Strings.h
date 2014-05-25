@@ -14,9 +14,12 @@
 
 @property (strong, nonatomic) NSString * logMessage;
 @property (strong, nonatomic) NSString * stringToReturn;
-@property (weak, nonatomic) NSString * contentsOfFile;
+@property (strong, nonatomic) NSString * contentsOfFile;
+@property (strong, nonatomic) NSMutableString * myMuteStr;
 
 #pragma methods
+
+-(NSMutableString *) returnNsmutableString;
 
 -(NSString *) returnContentsOfFile;
 
