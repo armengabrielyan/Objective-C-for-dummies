@@ -19,6 +19,19 @@
 
 #pragma methods
 
+-(NSMutableString *) deleteFromString {
+    NSRange range;
+    range.location = 1;
+    range.length = 1;
+    [self.myMuteStr deleteCharactersInRange:range];
+    return self.myMuteStr;
+}
+
+-(NSMutableString *) appendStringAfter {
+    [self.myMuteStr appendString:@"C"];
+    return self.myMuteStr;
+}
+
 -(NSMutableString *) insertCharacterToStrong {
     [self.myMuteStr insertString:@"B" atIndex:[self.myMuteStr length]];
     return self.myMuteStr;
@@ -53,6 +66,10 @@
     NSLog(@"Mutable String is : %@", [self returnNsmutableString]);
     //Inserting to Mutable String
     NSLog(@"New String is : %@", [self insertCharacterToStrong]);
+    //Append String call
+    NSLog(@"String C: %@", [self appendStringAfter]);
+    //Call of the string delete B method
+    NSLog(@"Characters deleted: %@", [self deleteFromString]);
 }
 
 @end

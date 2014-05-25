@@ -19,6 +19,10 @@
 
 #pragma methods
 
+-(NSMutableString *) deleteFromString;
+
+-(NSMutableString *) appendStringAfter;
+
 -(NSMutableString *) insertCharacterToStrong;
 
 -(NSMutableString *) returnNsmutableString;
