@@ -19,6 +19,8 @@
 
 #pragma methods
 
+-(NSMutableString *) findAndReplaceString;
+
 -(NSMutableString *) deleteFromString;
 
 -(NSMutableString *) appendStringAfter;

@@ -19,6 +19,17 @@
 
 #pragma methods
 
+-(NSMutableString *) findAndReplaceString {
+    NSRange range;
+    range.location = 0;
+    range.length = 2;
+    [self.myMuteStr replaceOccurrencesOfString:@"AC"
+                           withString:@"ABCDEFGHI"
+                              options:NSLiteralSearch
+                                range:range];
+    return self.myMuteStr;
+}
+
 -(NSMutableString *) deleteFromString {
     NSRange range;
     range.location = 1;
@@ -70,6 +81,8 @@
     NSLog(@"String C: %@", [self appendStringAfter]);
     //Call of the string delete B method
     NSLog(@"Characters deleted: %@", [self deleteFromString]);
+    //Call of find and replace
+    NSLog(@"Replaced String is: %@", [self findAndReplaceString]);
 }
 
 @end
