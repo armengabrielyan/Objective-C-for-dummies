@@ -19,6 +19,11 @@
 
 #pragma methods
 
+-(NSMutableString *) insertCharacterToStrong {
+    [self.myMuteStr insertString:@"B" atIndex:[self.myMuteStr length]];
+    return self.myMuteStr;
+}
+
 -(NSMutableString *) returnNsmutableString {
     self.myMuteStr = [NSMutableString stringWithString:@"A"];
     return self.myMuteStr;
@@ -46,6 +51,8 @@
     NSLog(@"%@", [self returnContentsOfFile]);
     //Checks for NSMutableStrings
     NSLog(@"Mutable String is : %@", [self returnNsmutableString]);
+    //Inserting to Mutable String
+    NSLog(@"New String is : %@", [self insertCharacterToStrong]);
 }
 
 @end

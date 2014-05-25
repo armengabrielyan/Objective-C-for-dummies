@@ -12,12 +12,14 @@
 
 #pragma properties
 
-@property (strong, nonatomic) NSString * logMessage;
-@property (strong, nonatomic) NSString * stringToReturn;
-@property (strong, nonatomic) NSString * contentsOfFile;
-@property (strong, nonatomic) NSMutableString * myMuteStr;
+@property NSString * logMessage;
+@property NSString * stringToReturn;
+@property NSString * contentsOfFile;
+@property NSMutableString * myMuteStr;
 
 #pragma methods
+
+-(NSMutableString *) insertCharacterToStrong;
 
 -(NSMutableString *) returnNsmutableString;
 
