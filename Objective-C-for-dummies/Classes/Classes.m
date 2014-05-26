@@ -7,6 +7,7 @@
 //
 
 #import "Classes.h"
+#import "Classes.extension.h"
 
 @implementation Classes
 
@@ -18,7 +19,9 @@
 
 -(void) checkCalled {
     self.logMessage = @"Classes initialized";
+    self.simplePrivateVar = @"I am a private property of Classes extension";
     NSLog(@"%@", self.logMessage);
+    NSLog(@"%@", self.simplePrivateVar);
 }
 
 @end

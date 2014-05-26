@@ -49,6 +49,7 @@
 		4F93B85019335C7D00C79636 /* Dictionaries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dictionaries.m; sourceTree = "<group>"; };
 		4F93B85219336AE600C79636 /* Classes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Classes.h; sourceTree = "<group>"; };
 		4F93B85319336AE600C79636 /* Classes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Classes.m; sourceTree = "<group>"; };
+		4F93B8561933711800C79636 /* Classes.extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Classes.extension.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +123,7 @@
 				4F93B85019335C7D00C79636 /* Dictionaries.m */,
 				4F93B85219336AE600C79636 /* Classes.h */,
 				4F93B85319336AE600C79636 /* Classes.m */,
+				4F93B8561933711800C79636 /* Classes.extension.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
