@@ -14,8 +14,16 @@
 
 @property NSString * logMessage;
 
+@property NSArray * numberArray;
+
+@property NSArray * letterArray;
+
 #pragma methods
 
 -(void) checkCalled;
+
+-(NSArray *) returnNumberArray;
+
+-(NSArray *) returnLetterArray;
 
 @end
