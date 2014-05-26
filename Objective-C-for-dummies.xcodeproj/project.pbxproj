@@ -14,6 +14,7 @@
 		4F93B8481931139900C79636 /* Strings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93B8471931139900C79636 /* Strings.m */; };
 		4F93B84B1932341100C79636 /* Numbers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93B84A1932341100C79636 /* Numbers.m */; };
 		4F93B84E1933281F00C79636 /* Arrays.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93B84D1933281F00C79636 /* Arrays.m */; };
+		4F93B85119335C7D00C79636 /* Dictionaries.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93B85019335C7D00C79636 /* Dictionaries.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,8 @@
 		4F93B84A1932341100C79636 /* Numbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Numbers.m; sourceTree = "<group>"; };
 		4F93B84C1933281F00C79636 /* Arrays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arrays.h; sourceTree = "<group>"; };
 		4F93B84D1933281F00C79636 /* Arrays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arrays.m; sourceTree = "<group>"; };
+		4F93B84F19335C7D00C79636 /* Dictionaries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dictionaries.h; sourceTree = "<group>"; };
+		4F93B85019335C7D00C79636 /* Dictionaries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dictionaries.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 				4F93B84A1932341100C79636 /* Numbers.m */,
 				4F93B84C1933281F00C79636 /* Arrays.h */,
 				4F93B84D1933281F00C79636 /* Arrays.m */,
+				4F93B84F19335C7D00C79636 /* Dictionaries.h */,
+				4F93B85019335C7D00C79636 /* Dictionaries.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 				4F93B84B1932341100C79636 /* Numbers.m in Sources */,
 				4F93B8451931121400C79636 /* Bootstrap.m in Sources */,
 				4F93B84E1933281F00C79636 /* Arrays.m in Sources */,
+				4F93B85119335C7D00C79636 /* Dictionaries.m in Sources */,
 				4F93B8321931109F00C79636 /* main.m in Sources */,
 				4F93B8481931139900C79636 /* Strings.m in Sources */,
 			);

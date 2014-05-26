@@ -14,6 +14,8 @@
 
 #pragma methods
 
+-(void) initDictionaries;
+
 -(void) initArrays;
 
 -(void) initNumbers;
