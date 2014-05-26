@@ -30,6 +30,10 @@
 
 #pragma methods
 
+-(NSString *) classMethodWithParamOne: (int) firstParam two:(NSString *) secondParam three: (NSNumber *) thirdParam;
+
+-(NSString *) returnIvar;
+
 -(void) checkCalled;
 
 @end
