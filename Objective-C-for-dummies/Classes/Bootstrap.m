@@ -13,12 +13,18 @@
 #import "Dictionaries.h"
 #import "Classes.h"
 #import "Inheritance.h"
+#import "Classes.category.h"
 
 @implementation Bootstrap
 
 #pragma properties
 
 #pragma methods
+
+-(void) initClassesCustom {
+    Classes * classesCustomInstance = [[Classes alloc] initWithName:@"Cyberhulk"];
+    NSLog(@"Custom initializer name is%@", [classesCustomInstance name]);
+}
 
 -(void) initInheritance {
     Inheritance * inheritanceInstance = [[Inheritance alloc] init];
@@ -67,6 +73,8 @@
     [self initClasses];
     //Starting inheritance
     [self initInheritance];
+    //Starting classes with custom Initializer
+    [self initClassesCustom];
 }
 
 @end

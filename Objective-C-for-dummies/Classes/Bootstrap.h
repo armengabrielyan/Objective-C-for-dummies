@@ -14,6 +14,8 @@
 
 #pragma methods
 
+-(void) initClassesCustom;
+
 -(void) initInheritance;
 
 -(void) initClasses;

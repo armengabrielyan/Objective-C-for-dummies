@@ -31,6 +31,7 @@
 #pragma properties
 
 @property NSString * logMessage;
+@property NSString * name;
 
 #pragma methods
 

@@ -17,6 +17,7 @@
 		4F93B85119335C7D00C79636 /* Dictionaries.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93B85019335C7D00C79636 /* Dictionaries.m */; };
 		4F93B85419336AE600C79636 /* Classes.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93B85319336AE600C79636 /* Classes.m */; };
 		4F93B85A193377D800C79636 /* Inheritance.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93B859193377D800C79636 /* Inheritance.m */; };
+		4F93B85D193381EA00C79636 /* Classes.category.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93B85C193381EA00C79636 /* Classes.category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +54,8 @@
 		4F93B8561933711800C79636 /* Classes.extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Classes.extension.h; sourceTree = "<group>"; };
 		4F93B858193377D800C79636 /* Inheritance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Inheritance.h; sourceTree = "<group>"; };
 		4F93B859193377D800C79636 /* Inheritance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Inheritance.m; sourceTree = "<group>"; };
+		4F93B85B193381EA00C79636 /* Classes.category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Classes.category.h; sourceTree = "<group>"; };
+		4F93B85C193381EA00C79636 /* Classes.category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Classes.category.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +132,8 @@
 				4F93B8561933711800C79636 /* Classes.extension.h */,
 				4F93B858193377D800C79636 /* Inheritance.h */,
 				4F93B859193377D800C79636 /* Inheritance.m */,
+				4F93B85B193381EA00C79636 /* Classes.category.h */,
+				4F93B85C193381EA00C79636 /* Classes.category.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F93B85419336AE600C79636 /* Classes.m in Sources */,
+				4F93B85D193381EA00C79636 /* Classes.category.m in Sources */,
 				4F93B84B1932341100C79636 /* Numbers.m in Sources */,
 				4F93B85A193377D800C79636 /* Inheritance.m in Sources */,
 				4F93B8451931121400C79636 /* Bootstrap.m in Sources */,

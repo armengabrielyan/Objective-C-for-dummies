@@ -14,6 +14,8 @@
 #pragma properties
 
 @synthesize logMessage = _logMessage;
+@synthesize name = _name;
+
 
 #pragma methods
 
