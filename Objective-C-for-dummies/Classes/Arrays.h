@@ -20,10 +20,12 @@
 
 #pragma methods
 
--(void) checkCalled;
+-(NSNumber *) returnNumberFromArray: (int) curIndex;
+
+-(NSArray *) returnLetterArray;
 
 -(NSArray *) returnNumberArray;
 
--(NSArray *) returnLetterArray;
+-(void) checkCalled;
 
 @end
