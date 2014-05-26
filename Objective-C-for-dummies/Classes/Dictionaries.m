@@ -14,11 +14,20 @@
 
 @synthesize logMessage = _logMessage;
 
+@synthesize simpleDictionary = _simpleDictionary;
+
 #pragma methods
+
+-(NSDictionary *) returnSimpleDictionary {
+    self.simpleDictionary = @{@"one": @1, @"two": @2, @"three": @3};
+    return self.simpleDictionary;
+}
 
 -(void) checkCalled {
     self.logMessage = @"Dictionaries Initialized";
     NSLog(@"%@", self.logMessage);
+    //Calling returnSimpleDictionary
+    NSLog(@"%@", [self returnSimpleDictionary]);
 }
 
 @end

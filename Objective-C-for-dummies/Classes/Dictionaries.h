@@ -14,7 +14,11 @@
 
 @property NSString* logMessage;
 
+@property NSDictionary * simpleDictionary;
+
 #pragma methods
+
+-(NSDictionary *) returnSimpleDictionary;
 
 -(void) checkCalled;
 
