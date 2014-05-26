@@ -16,7 +16,19 @@
 
 @property NSDictionary * simpleDictionary;
 
+@property NSMutableDictionary * simpleMutableDictionary;
+
 #pragma methods
+
+-(void) removeAllObjectsFromMutableDictionary;
+
+-(NSMutableDictionary *) removeObjectFromSimpleMutableDictionary: (id) curKey;
+
+-(void) addObjectToMutableDictionaryWithKey: (NSString *) curKey AndValue: (id) curObject;
+
+-(NSMutableDictionary *) returnSimpleMutableDictionary;
+
+-(NSNumber *) returnObjectFromDictionary: (NSString *) curKey;
 
 -(NSDictionary *) returnSimpleDictionary;
 
