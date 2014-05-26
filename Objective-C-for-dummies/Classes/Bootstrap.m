@@ -23,6 +23,9 @@
 -(void) initInheritance {
     Inheritance * inheritanceInstance = [[Inheritance alloc] init];
     [inheritanceInstance checkCalled];
+    //Checking the public var from Classes object
+    inheritanceInstance -> publicLog = @"This is a public log";
+    NSLog(@"Public Var %@",inheritanceInstance -> publicLog);
 }
 
 -(void) initClasses {

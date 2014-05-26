@@ -16,6 +16,12 @@
 
 #pragma methods
 
+-(NSString *) returnProtectedVar {
+    //Returns protectedLog of parent classes class
+    protectedLog = @"I am protected var";
+    return protectedLog;
+}
+
 -(NSString *) checkParentMethod {
     NSString * result = [self classMethodWithParamOne:1 two:@"two" three:@3];
     //or [super classMethodWithParamOne:1 two:@"two" three:@3] if overrriden
@@ -26,6 +32,8 @@
     NSLog(@"Inheritance Initialized");
     //calling checkParentMethod
     NSLog(@"Called from child Class %@", [self checkParentMethod]);
+    //calling returnProtectedVar
+    NSLog(@"Protected var: %@", [self returnProtectedVar]);
 }
 
 @end

@@ -22,7 +22,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Classes : NSObject
+@interface Classes : NSObject {
+    @private NSString * log;
+    @protected NSString * protectedLog;
+    @public NSString * publicLog;
+}
 
 #pragma properties
 

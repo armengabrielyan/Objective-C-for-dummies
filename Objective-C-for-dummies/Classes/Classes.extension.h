@@ -6,10 +6,7 @@
 //  Copyright (c) 2014 Cyberhulk. All rights reserved.
 //
 
-@interface Classes () {
-    int counter;
-    NSString * log;
-}
+@interface Classes ()
 
 @property NSString * simplePrivateVar;
 

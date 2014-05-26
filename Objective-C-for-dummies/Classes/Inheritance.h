@@ -16,6 +16,8 @@
 
 #pragma methods
 
+-(NSString *) returnProtectedVar;
+
 -(NSString *) checkParentMethod;
 
 -(void) checkCalled;
