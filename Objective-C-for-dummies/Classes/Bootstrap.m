@@ -9,12 +9,18 @@
 #import "Bootstrap.h"
 #import "Strings.h"
 #import "Numbers.h"
+#import "Arrays.h"
 
 @implementation Bootstrap
 
 #pragma properties
 
 #pragma methods
+
+-(void) initArrays {
+    Arrays * arraysInstance = [[Arrays alloc] init];
+    [arraysInstance checkCalled];
+}
 
 -(void) initNumbers {
     Numbers * numbersInstance = [[Numbers alloc] init];
@@ -32,6 +38,8 @@
     [self initStrings];
     //Statring Numbers
     [self initNumbers];
+    //Starting Arrays
+    [self initArrays];
 }
 
 @end

@@ -13,6 +13,7 @@
 		4F93B8451931121400C79636 /* Bootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93B8441931121400C79636 /* Bootstrap.m */; };
 		4F93B8481931139900C79636 /* Strings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93B8471931139900C79636 /* Strings.m */; };
 		4F93B84B1932341100C79636 /* Numbers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93B84A1932341100C79636 /* Numbers.m */; };
+		4F93B84E1933281F00C79636 /* Arrays.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93B84D1933281F00C79636 /* Arrays.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		4F93B8471931139900C79636 /* Strings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Strings.m; sourceTree = "<group>"; };
 		4F93B8491932341100C79636 /* Numbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Numbers.h; sourceTree = "<group>"; };
 		4F93B84A1932341100C79636 /* Numbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Numbers.m; sourceTree = "<group>"; };
+		4F93B84C1933281F00C79636 /* Arrays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arrays.h; sourceTree = "<group>"; };
+		4F93B84D1933281F00C79636 /* Arrays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Arrays.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 				4F93B8471931139900C79636 /* Strings.m */,
 				4F93B8491932341100C79636 /* Numbers.h */,
 				4F93B84A1932341100C79636 /* Numbers.m */,
+				4F93B84C1933281F00C79636 /* Arrays.h */,
+				4F93B84D1933281F00C79636 /* Arrays.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 			files = (
 				4F93B84B1932341100C79636 /* Numbers.m in Sources */,
 				4F93B8451931121400C79636 /* Bootstrap.m in Sources */,
+				4F93B84E1933281F00C79636 /* Arrays.m in Sources */,
 				4F93B8321931109F00C79636 /* main.m in Sources */,
 				4F93B8481931139900C79636 /* Strings.m in Sources */,
 			);
