@@ -14,6 +14,8 @@
 
 #pragma methods
 
+-(void) initInheritance;
+
 -(void) initClasses;
 
 -(void) initDictionaries;

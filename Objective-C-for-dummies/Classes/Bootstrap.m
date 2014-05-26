@@ -12,12 +12,18 @@
 #import "Arrays.h"
 #import "Dictionaries.h"
 #import "Classes.h"
+#import "Inheritance.h"
 
 @implementation Bootstrap
 
 #pragma properties
 
 #pragma methods
+
+-(void) initInheritance {
+    Inheritance * inheritanceInstance = [[Inheritance alloc] init];
+    [inheritanceInstance checkCalled];
+}
 
 -(void) initClasses {
     Classes * classesInstance = [[Classes alloc] init];
@@ -56,6 +62,8 @@
     [self initDictionaries];
     //Starting Classes
     [self initClasses];
+    //Starting inheritance
+    [self initInheritance];
 }
 
 @end
