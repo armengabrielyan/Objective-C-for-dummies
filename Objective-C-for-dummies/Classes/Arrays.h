@@ -18,7 +18,19 @@
 
 @property NSArray * letterArray;
 
+@property NSMutableArray * simpleMutableArray;
+
 #pragma methods
+
+-(NSMutableArray *) replaceElementInMutableArray: (int) curNum withElement: (int) replaceNum;
+
+-(NSMutableArray *) removeObjectFromMutableArray:(NSNumber *) curNum;
+
+-(NSMutableArray *) addObjectToMutableArray: (NSNumber *) curNum;
+
+-(NSMutableArray *) returnMutableArray;
+
+-(NSString *) returnLastElement;
 
 -(NSString *) returnStringFromArray: (int) curIndex;
 

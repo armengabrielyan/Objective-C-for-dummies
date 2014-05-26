@@ -18,7 +18,33 @@
 
 @synthesize letterArray = _letterArray;
 
+@synthesize simpleMutableArray = _simpleMutableArray;
+
 #pragma methods
+
+-(NSMutableArray *) replaceElementInMutableArray: (int) curNum withElement: (int) replaceNum; {
+    [self.simpleMutableArray exchangeObjectAtIndex:curNum withObjectAtIndex:replaceNum];
+    return self.simpleMutableArray;
+}
+
+-(NSMutableArray *) removeObjectFromMutableArray:(NSNumber *) curNum {
+    [self.simpleMutableArray removeObject:curNum];
+    return self.simpleMutableArray;
+}
+
+-(NSMutableArray *) addObjectToMutableArray:(NSNumber *) curNum {
+    [self.simpleMutableArray addObject:curNum];
+    return self.simpleMutableArray;
+}
+
+-(NSMutableArray *) returnMutableArray {
+    self.simpleMutableArray = [NSMutableArray arrayWithArray:@[@-2, @-1, @0, @-3, @-4]];
+    return self.simpleMutableArray;
+}
+
+-(NSString *) returnLastElement {
+    return [self.letterArray lastObject];
+}
 
 -(NSString *) returnStringFromArray: (int) curIndex {
     return [self.letterArray objectAtIndex:curIndex];
@@ -49,6 +75,16 @@
     NSLog(@"Number from array is: %@", [self returnNumberFromArray:1]);
     //Calling returnStringFromArray
     NSLog(@"String from array is: %@", [self returnStringFromArray:1]);
+    //Calling returnLastElement
+    NSLog(@"Last Element from letter array is: %@", [self returnLastElement]);
+    //Calling returnMutableArray
+    NSLog(@"%@", [self returnMutableArray]);
+    //Calling addObjectToMutableArray
+    NSLog(@"Add Element %@", [self addObjectToMutableArray:@9]);
+    //Calling removeObjectFromMutableArray
+    NSLog(@"Remove Element %@", [self removeObjectFromMutableArray:@-1]);
+    //Calling replaceElementInMutableArray
+    NSLog(@"Replace Element %@", [self replaceElementInMutableArray:0 withElement:1]);
 }
 
 
