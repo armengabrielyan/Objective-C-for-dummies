@@ -11,12 +11,18 @@
 #import "Numbers.h"
 #import "Arrays.h"
 #import "Dictionaries.h"
+#import "Classes.h"
 
 @implementation Bootstrap
 
 #pragma properties
 
 #pragma methods
+
+-(void) initClasses {
+    Classes * classesInstance = [[Classes alloc] init];
+    [classesInstance checkCalled];
+}
 
 -(void) initDictionaries {
     Dictionaries * dictionariesInstance = [[Dictionaries alloc] init];
@@ -48,6 +54,8 @@
     [self initArrays];
     //Starting Dictionaries
     [self initDictionaries];
+    //Starting Classes
+    [self initClasses];
 }
 
 @end
