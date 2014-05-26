@@ -20,6 +20,8 @@
 
 #pragma methods
 
+-(NSString *) returnStringFromArray: (int) curIndex;
+
 -(NSNumber *) returnNumberFromArray: (int) curIndex;
 
 -(NSArray *) returnLetterArray;

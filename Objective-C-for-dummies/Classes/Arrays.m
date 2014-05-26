@@ -20,6 +20,10 @@
 
 #pragma methods
 
+-(NSString *) returnStringFromArray: (int) curIndex {
+    return [self.letterArray objectAtIndex:curIndex];
+}
+
 -(NSNumber *) returnNumberFromArray:(int) curIndex {
     return [self.numberArray objectAtIndex:curIndex];
 }
@@ -43,7 +47,8 @@
     NSLog(@"Letter Array is: %@", [self returnLetterArray]);
     //Calling return Number from array
     NSLog(@"Number from array is: %@", [self returnNumberFromArray:1]);
-    
+    //Calling returnStringFromArray
+    NSLog(@"String from array is: %@", [self returnStringFromArray:1]);
 }
 
 
